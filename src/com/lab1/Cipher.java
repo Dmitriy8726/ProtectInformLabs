@@ -1,9 +1,5 @@
 package com.lab1;
 
-import javax.imageio.ImageIO;
-import javax.sound.midi.SysexMessage;
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferByte;
 import java.io.*;
 import java.util.Random;
 
@@ -311,9 +307,9 @@ public class Cipher {
         fos.write(buffer, 0, buffer.length);
     }
 
-    public static void key_Entry(int Ca, int Da, int Cb, int Db, FileWriter key_file) throws IOException {
+    public static void key_Entry(long Ca, long Da, long Cb, long Db, FileWriter key_file) throws IOException {
 
-        Integer C;
+        Long C;
         C = Ca;
         key_file.write(C.toString());
         key_file.append(' ');
