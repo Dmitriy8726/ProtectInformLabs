@@ -6,12 +6,12 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class Criptogr {
-    public static BigInteger exponentiation(int a, int x, int p)
+    public static BigInteger exponentiation(long a, long x, long p)
     {
         BigInteger  result = BigInteger.valueOf(1);
         BigInteger c;
         BigInteger pp = BigInteger.valueOf(p);
-        int  bit;
+        long  bit;
         c = BigInteger.valueOf(a % p);
         bit = x & 1;
         if (bit == 1) {
@@ -32,7 +32,7 @@ public class Criptogr {
         return result;
     }
 
-    public static long[] evklid(int a, int b)
+    public static long[] evklid(long a, long b)
     {
         long[] U = {a, 1, 0};
         long[] V = {b, 0, 1};
@@ -61,9 +61,9 @@ public class Criptogr {
         while(true) {
             do {
                 p = random.nextInt(999999999) + 2;
-            } while (check(p) == false);
+            } while (!check(p));
             q = (p - 1) / 2;
-            if (check(q) == true) {
+            if (check(q)) {
                 break;
             }
         }
@@ -147,7 +147,7 @@ public class Criptogr {
 
     }
 
-    public static boolean check(int p)
+    public static boolean check(long p)
     {
         int b = (int)Math.pow(p, 0.5);
         for (int i = 2; i <= b; ++i) {
