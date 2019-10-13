@@ -78,7 +78,10 @@ public class Main {
         System.out.println("x = " + giStResult.toString());
         */
         //2 lab
-       shamir();
+        //shamir();
+        //el_Gamal();
+        //rsa();
+        //vernam();
     }
 
 }
