@@ -1,6 +1,7 @@
 package com.lab1;
 
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 import java.util.Random;
 
 import java.math.BigInteger;
@@ -9,11 +10,15 @@ import static com.lab1.Criptogr.*;
 
 import static com.lab1.Cipher.*;
 
+import static com.lab1.Signature.*;
+
+import static com.lab1.Pocker.*;
+
 public class Main {
 
     private static final int MAX_NUMBER = 1000000000;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
         Random random = new Random();
 
         //Првоерка mod в степени
@@ -79,11 +84,21 @@ public class Main {
         */
         //2 lab
         /*
+        System.out.println("Shamir");
         shamir();
+        System.out.println("el_Gamal");
         el_Gamal();
+        System.out.println("RSA");
         rsa();
+        System.out.println("Vernam");
         vernam();
-         */
+        */
+        //3 lab
+        /*Signature.rsa_Signature();
+        Signature.el_Gamal_signature();
+        Signature.gost_Signature();*/
+        //4 lab
+        //Pocker.generathion();
     }
 
 }

@@ -41,7 +41,6 @@ public class Cipher {
         do {
             p = random.nextInt(999999998) + 2;
         } while (check(p) == false);
-        System.out.println("p = " + p);
         //Алиса
         Ca = random.nextInt(999999999) + 1;
         resultEcklid = Criptogr.evklid(Ca, p - 1);
@@ -250,7 +249,6 @@ public class Cipher {
             resultEcklid[1] += f;
         }
         c = resultEcklid[1];
-        System.out.println(c);
         for(int i = 0; i < bytes.length; i++) {
             e = exponentiation(bytes[i], d, N).longValue();
             key_Entry(e, file_e);
