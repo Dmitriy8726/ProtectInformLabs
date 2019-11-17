@@ -14,6 +14,10 @@ import static com.lab1.Signature.*;
 
 import static com.lab1.Pocker.*;
 
+import static com.lab1.Voting.*;
+
+import static com.lab1.Gamelt.*;
+
 public class Main {
 
     private static final int MAX_NUMBER = 1000000000;
@@ -98,7 +102,11 @@ public class Main {
         Signature.el_Gamal_signature();
         Signature.gost_Signature();*/
         //4 lab
-        //Pocker.generathion();
+      /*  Pocker.generathion();*/
+        //5 lab
+        /*Voting.generathion();*/
+        //RGZ
+        Gamelt.generation();
     }
 
 }

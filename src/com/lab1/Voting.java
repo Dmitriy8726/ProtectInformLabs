@@ -8,7 +8,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Random;
 
 public class Voting {
-    
+
     public static void generathion() throws IOException, NoSuchAlgorithmException {
         Random random = new Random();
         MessageDigest m = MessageDigest.getInstance("SHA-256");
@@ -79,6 +79,8 @@ public class Voting {
                 System.out.println("Error1");
                 return;
             }
+
+
         }
 
 

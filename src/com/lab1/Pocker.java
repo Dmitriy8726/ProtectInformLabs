@@ -59,7 +59,7 @@ public class Pocker {
     }
 
     public static void generathion() throws IOException {
-        int n = 2;
+        int n = 6;
         long[] K = new long [MAX_KARDS];
         K[0] = 2;
         long p, q;
