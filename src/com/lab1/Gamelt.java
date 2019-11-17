@@ -2,7 +2,6 @@ package com.lab1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.lang.reflect.GenericArrayType;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -151,7 +150,7 @@ public class Gamelt {
 
         //1 вопрос , ответ
         for (int i = 0; i < Gam.size() - 1; i++) {
-            System.out.print(((Gam1.get(i) - 1) + 1) + " " + ((Gam1.get(i + 1) - 1) + 1) + " :");
+            System.out.print(((Gam.get(i) - 1) + 1) + " " + ((Gam.get(i + 1) - 1) + 1) + " :");
             System.out.print(exponentiation(F[Gam.get(i) - 1][Gam.get(i + 1) - 1], c, N).longValue() + " ");
             System.out.println(exponentiation(H1[Gam.get(i) - 1][Gam.get(i + 1) - 1], d, N));
         }
@@ -188,11 +187,5 @@ public class Gamelt {
             }
             System.out.println();
         }
-
-
-
-
-
-
     }
 }

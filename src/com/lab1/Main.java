@@ -16,7 +16,7 @@ import static com.lab1.Pocker.*;
 
 import static com.lab1.Voting.*;
 
-import static com.lab1.Gamelt.*;
+
 
 public class Main {
 
